@@ -249,8 +249,52 @@ main{
     /* padding-top: 90px; */
     height: calc(100% - 90px);
     border: 1px solid white;
+    overflow-y: auto;
     }
 
+.flexWrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteiner{
+    padding: 1rem;
+}
+
+.conteiner > h1{
+    color: white;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+.card{
+    width: calc(100% / 2 - 0.5rem);
+    padding: 0.5rem;
+}
+
+.picFilm{
+    width: 100%;
+}
+
+.picFilm > img{
+    width: 100%;
+}
+
+.infoFilm{
+    text-align: center;
+}
+
+.infoFilm > h3{
+    color: white;
+    padding: 0.3rem;
+    font-size: 1rem;
+}
+
+.infoFilm > p{
+    color: rgb(168, 164, 164);
+    font-size: 0.8rem;
+}
 
 /* ##### FOOTER ##### */
 

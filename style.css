@@ -4,62 +4,186 @@
     padding: 0;
 }
 
-body{
+/* body{
     font-family: ;
-}
+} */
 
 
 .conteinerMain{
     display: flex;
-    width: 100vw;
+    width: 100%;
+    height: calc(100vh - 90px);
 }
 
 /* ##### CONTEINER LEFT ##### */
 
 .conteinerLeft{
-    width: 30%;
-    min-height: 1000px;
+    width: 230px;
     background-color: black;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.2rem;
 }
 
-
-    .logo{
-        width: 100%;
-        min-height: 90px;
-        background-color: grey;
-        border: 1px solid white;
+@media screen and (max-width: 552px) {
+    
+    .conteinerLeft{
+        width: 50px;
+        padding: 0.7rem;
     }
 
-    .navi{
-        width: 100%;
-        min-height: 120px;
-        background-color: grey;
-        border: 1px solid white;
-    }
-
-    .playlist{
-        width: 100%;
-        min-height: 300px;
-        background-color: grey;
-        border: 1px solid white;
+    .conteinerLeft span , h3 , p , b , hr {
+        display: none;
     }
 
     .install{
-        width: 100%;
-        min-height: 80px;
-        background-color: grey;
-        border: 1px solid white;
-        position: absolute;
-        bottom: 0;
+        padding: 0 !important;
     }
+
+    .conteinerRight{
+        width: calc(100% - 50px);
+    }
+}
+
+    .logo{
+        width: 100%;
+        height: 90px;
+        padding: 1.2rem 0;
+        /* border: 1px solid white; */
+    }
+
+        .logo > img{
+            width: 70%;
+            height: 100%;
+        }
+
+    .navi{
+        width: 100%;
+        /* border: 1px solid white; */
+        padding: 20px 0;
+        line-height: 2.2rem;
+    }
+
+        .navi > span{
+            font-size: 1.2rem;
+            color: rgb(168, 164, 164);
+            padding-left: 0.5rem;
+        }
+
+        .navi > .fa-solid{
+            font-size: 1.4rem;
+            color: rgb(168, 164, 164);
+        }
+
+    .playlist{
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid white; */
+        line-height: 2.2rem;
+    }
+
+        .playlist > h3{
+            font-size: 1rem;
+            color: white;
+        }
+
+        .playlist > p{
+            color: rgb(168, 164, 164);
+        }
+
+        .playlist  .fa-solid{
+            font-size: 2.5rem;
+        }
+
+        #playlistBig{
+            font-size: 1.2rem;
+            /* centrare */
+        }
+
+    .install{
+        width: 100%;
+        /* border: 1px solid white; */
+        padding: 0.5rem 1.2rem;
+    }
+
+        .install > button{
+            border: 1px solid white;
+            border-radius: 50%;
+            padding: 0 0.3rem;
+            background-color: black;
+            margin-right: 0.5rem;
+        }
+
+        button > .fa-solid{
+            font-size: 7px;
+            color: white;
+        }
+
+        .install > span{
+            color: rgb(168, 164, 164);
+            font-size: 1rem;
+        }
+
+        .fa-circle-user{
+            font-size: 2rem;
+            margin-right: 0.5rem;
+            color: white;
+        }
+
+        .install > b{
+            font-size: 1.1rem;
+            color: white;
+        }
+
+        hr{
+            margin: 1rem 0;
+            border-color:rgb(168, 164, 164);
+        }
 
 /* ##### CONTEINER RIGHT ##### */
 
 .conteinerRight{
-    width: 70%;
+    width: calc(100% - 230px);
     min-height: 1000px;
     background-color: navy;
+}
+
+@media screen and (max-width: 552px) {
+    
+    .conteinerLeft{
+        width: 50px;
+        padding: 0.7rem;
+        justify-content: center;
+    }
+
+    .conteinerLeft span , h3 , p , b , hr {
+        display: none;
+    }
+
+    .install{
+        padding: 0;
+    }
+
+    .conteinerRight{
+        width: calc(100% - 50px);
+    }
+
+    .logo{
+        width: 100%;
+        height: 90px;
+        padding: 1.2rem 0;
+        background-image: url(./img/logo-small.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .logo > img{
+        display: none;
+    }
+
+    .install > button{
+        margin: 2rem 0.5rem;
+    }
 }
 
 
@@ -79,7 +203,7 @@ body{
 
     main{
         width: 100%;
-        height: 100%;
+        height: calc(100% - 210px);
         border: 1px solid white;
     }
 
@@ -87,7 +211,7 @@ body{
 
 footer{
     width: 100%;
-    min-height: 90px;
+    height: 90px;
     background-color: grey;
 }
 

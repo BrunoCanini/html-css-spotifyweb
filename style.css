@@ -25,127 +25,115 @@
     padding-left: 1.2rem;
 }
 
-@media screen and (max-width: 552px) {
-    
-    .conteinerLeft{
-        width: 50px;
-        padding: 0.7rem;
-    }
+/* LOGO */
 
-    .conteinerLeft span , h3 , p , b , hr {
-        display: none;
-    }
-
-    .install{
-        padding: 0 !important;
-    }
-
-    .conteinerRight{
-        width: calc(100% - 50px);
-    }
+.logo{
+    width: 100%;
+    height: 90px;
+    padding: 1.2rem 0;
+    /* border: 1px solid white; */
 }
 
-    .logo{
-        width: 100%;
-        height: 90px;
-        padding: 1.2rem 0;
-        /* border: 1px solid white; */
-    }
+.logo > img{
+     width: 70%;
+     height: 100%;
+}
 
-        .logo > img{
-            width: 70%;
-            height: 100%;
-        }
+/* NAVI */
 
-    .navi{
-        width: 100%;
-        /* border: 1px solid white; */
-        padding: 20px 0;
-        line-height: 2.2rem;
-    }
+.navi{
+    width: 100%;
+    /* border: 1px solid white; */
+     padding: 20px 0;
+     line-height: 2.2rem;
+}
 
-        .navi > span{
-            font-size: 1.2rem;
-            color: rgb(168, 164, 164);
-            padding-left: 0.5rem;
-        }
+.navi > span{
+    font-size: 1.2rem;
+    color: rgb(168, 164, 164);
+     padding-left: 0.5rem;
+ }
 
-        .navi > .fa-solid{
-            font-size: 1.4rem;
-            color: rgb(168, 164, 164);
-        }
+.navi > .fa-solid{
+     font-size: 1.4rem;
+     color: rgb(168, 164, 164);
+ }
 
-    .playlist{
-        width: 100%;
-        height: 100%;
-        /* border: 1px solid white; */
-        line-height: 2.2rem;
-    }
+    /* PLAYLIST */
 
-        .playlist > h3{
-            font-size: 1rem;
-            color: white;
-        }
+.playlist{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid white; */
+    line-height: 2.2rem;
+ }
 
-        .playlist > p{
-            color: rgb(168, 164, 164);
-        }
+.playlist > h3{
+     font-size: 1rem;
+     color: white;
+ }
 
-        .playlist  .fa-solid{
-            font-size: 2.5rem;
-        }
+.playlist > p{
+     color: rgb(168, 164, 164);
+}
 
-        #playlistBig{
-            font-size: 1.2rem;
-            /* centrare */
-        }
+.playlist  .fa-solid{
+     font-size: 2.5rem;
+}
 
-    .install{
-        width: 100%;
-        /* border: 1px solid white; */
-        padding: 0.5rem 1.2rem;
-    }
+#playlistBig{
+     font-size: 1.2rem;
+     /* centrare */
+ }
+    
+    /* INSTALL */
 
-        .install > button{
-            border: 1px solid white;
-            border-radius: 50%;
-            padding: 0 0.3rem;
-            background-color: black;
-            margin-right: 0.5rem;
-        }
+.install{
+    width: 100%;
+     /* border: 1px solid white; */
+    padding: 0.5rem 1.2rem;
+}
 
-        button > .fa-solid{
-            font-size: 7px;
-            color: white;
-        }
+.install > button{
+     border: 1px solid white;
+     border-radius: 50%;
+     padding: 0 0.3rem;
+     background-color: black;
+     margin-right: 0.5rem;
+}
 
-        .install > span{
-            color: rgb(168, 164, 164);
-            font-size: 1rem;
-        }
+ button > .fa-solid{
+    font-size: 7px;
+    color: white;
+}
 
-        .fa-circle-user{
-            font-size: 2rem;
-            margin-right: 0.5rem;
-            color: white;
-        }
+.install > span{
+    color: rgb(168, 164, 164);
+     font-size: 1rem;
+ }
 
-        .install > b{
-            font-size: 1.1rem;
-            color: white;
-        }
+ .fa-circle-user{
+    font-size: 2rem;
+    margin-right: 0.5rem;
+     color: white;
+ }
 
-        hr{
-            margin: 1rem 0;
-            border-color:rgb(168, 164, 164);
-        }
+.install > b{
+    font-size: 1.1rem;
+     color: white;
+}
+
+ hr{
+     margin: 1rem 0;
+    border-color:rgb(168, 164, 164);
+}
 
 /* ##### CONTEINER RIGHT ##### */
 
 .conteinerRight{
     width: calc(100% - 230px);
     min-height: 1000px;
-    background-color: navy;
+    background-color: #141922;
 }
 
 @media screen and (max-width: 552px) {
@@ -186,26 +174,83 @@
     }
 }
 
+/* ##### HEADER ##### */
 
-    header{
-        width: 100%;
-        height: 90px;
-        background-color: salmon;
-        border: 1px solid white; 
+ header{
+    width: 100%;
+     height: 90px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 0.7rem;
+ }
+
+header > button{
+width: 219px;
+padding: 0.8rem;
+ background-color: transparent;
+ border: 1px solid white;
+color: white;
+ border-radius: 1.8rem;
+}
+
+/* ##### NAV ##### */
+
+nav{
+    width: 100%;
+    padding: 0.5 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxNav{
+    width: calc(100% / 3);
+    padding: 1rem 0;
+}
+
+.boxNav > a{
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: rgb(168, 164, 164);
+}
+
+@media screen and (max-width: 552px) {
+    
+    .boxNav{
+        width: calc(100% / 4);
     }
 
-    nav{
-        width: 100%;
-        min-height: 120px;
-        background-color: salmon;
-        border: 1px solid white;
+}
+
+@media screen and (min-width: 878px) {
+    
+    .boxNav{
+        width: calc(100% / 5);
+    }
+    
+}
+
+@media screen and (min-width: 1400px) {
+    
+    .boxNav{
+        width: calc(100% / 6 - 6%);
+    }
+}
+
+
+/* ##### MAIN ##### */
+
+main{
+    width: 100%;
+    /* padding-top: 90px; */
+    height: calc(100% - 90px);
+    border: 1px solid white;
     }
 
-    main{
-        width: 100%;
-        height: calc(100% - 210px);
-        border: 1px solid white;
-    }
 
 /* ##### FOOTER ##### */
 

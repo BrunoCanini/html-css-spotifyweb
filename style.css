@@ -34,28 +34,22 @@ body{
 }
 
 .logo > img{
-     width: 70%;
-     height: 100%;
+    width: 70%;
+    height: 100%;
 }
 
 /* NAVI */
 
 .navi{
     width: 100%;
-     padding: 20px 0;
-     line-height: 2.2rem;
+    padding: 20px 0;
+    line-height: 2.2rem;
 }
 
 .navi > span{
-    font-size: 1.2rem;
     color: rgb(168, 164, 164);
     padding-left: 0.5rem;
     vertical-align: top;
- }
-
-.navi > .fa-solid{
-     font-size: 1.4rem;
-     color: rgb(168, 164, 164);
  }
 
  .navi > img{
@@ -71,12 +65,13 @@ body{
  }
 
 .playlist > h3{
-     font-size: 1rem;
+     font-size: 0.9rem;
      color: white;
  }
 
 .playlist > p{
      color: rgb(168, 164, 164);
+     font-size: 0.9rem;
 }
 
 .playlist  .fa-solid{
@@ -84,7 +79,7 @@ body{
 }
 
 #playlistBig{
-     font-size: 1.2rem;
+     font-size: 1.1rem;
      /* centrare */
  }
     
@@ -118,11 +113,11 @@ body{
 
 .install > span{
     color: rgb(168, 164, 164);
-    font-size: 1rem;
+    font-size: 0.8rem;
  }
 
 .install > b{
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: white;
     padding-left: 0.5rem;
 }

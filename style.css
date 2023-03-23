@@ -368,13 +368,118 @@ main{
 footer{
     width: 100%;
     height: 90px;
-    background-color: grey;
+    background-color: #282828;
     position: fixed;
     bottom: 0;
 }
 
-.footeleft{
+.conteinerFood{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.footerLeft{
+    width: 30%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+
+    border: 1px solid white;
+}
+
+.footerCenter{
+    width: 40%;
+    height: 100%;
+    background-color: blueviolet;
+}
+
+.footerRight{
     width: 30%;
     height: 100%;
-    background-color: ;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.songImg{
+    width: 30%;
+    border: 1px solid white;
+}
+
+.songImg > img{
+    width: 80%;
+    display: block;
+}
+
+.songName{
+    width: 60%;
+    border: 1px solid white;
+}
+
+.songName > h4{
+    color: white;
+}
+
+.songName > p{
+    color: rgb(168, 164, 164);
+    font-size: 0.8rem;
+}
+
+.save{
+    width: 10%;
+    border: 1px solid white;
+    color: rgb(168, 164, 164);
+}
+
+.play{
+    width: 100%;
+    height: 50%;
+    border: 1px solid white;
+    display: flex;
+    color: white;
+}
+
+.time{
+    width: 100%;
+    height: 50%;
+    border: 1px solid white;
+}
+
+.boxPlay{
+    width: 20%;
+    height: 100%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxPlayBig{
+    width: 30%;
+    height: 100%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.time{
+    width: 100%;
+    height: 50%;
+    border: 1px solid white;
+    display: flex;
+    color: white;
+}
+
+.lineTime{
+    width: 80%;
+}
+
+.footerRight > .fa-solid{
+    padding: 0.3rem;
 }

@@ -46,7 +46,7 @@ body{
     line-height: 2.2rem;
 }
 
-.navi > span{
+.navi > a{
     color: rgb(168, 164, 164);
     padding-left: 0.5rem;
     vertical-align: top;
@@ -69,18 +69,22 @@ body{
      color: white;
  }
 
-.playlist > p{
+.playlist > a{
      color: rgb(168, 164, 164);
      font-size: 0.9rem;
 }
 
-.playlist  .fa-solid{
-     font-size: 2.5rem;
+.playlist  button{
+    font-size: 2rem;
+    font-weight: bolder;
+    width: 2.5rem;
+    background-color: rgb(168, 164, 164);
+    border: none;
 }
 
 #playlistBig{
      font-size: 1.1rem;
-     /* centrare */
+     padding-left: 0.5rem;
  }
     
 /* INSTALL */
@@ -90,7 +94,7 @@ body{
     padding: 0.5rem 1.2rem;
 }
 
-.install > img{
+.install  img{
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
@@ -116,15 +120,21 @@ body{
     font-size: 0.8rem;
  }
 
-.install > b{
+.install  p{
     font-size: 1rem;
     color: white;
+    font-weight: bold;
     padding-left: 0.5rem;
 }
 
  hr{
     margin: 1rem 0;
     border-color:rgb(168, 164, 164);
+}
+
+.account{
+    display: flex;
+    align-items: center;
 }
 
 /* ##### CONTEINER RIGHT ##### */
@@ -144,7 +154,11 @@ body{
         justify-content: center;
     }
 
-    .conteinerLeft span , h3 , p , b , hr {
+    .conteinerLeft span , h3 , p , hr , a {
+        display: none;
+    }
+
+    #buttonNone{
         display: none;
     }
 
@@ -172,20 +186,20 @@ body{
     .install > button{
         margin: 2rem 0.4rem;
     }
+
 }
 
 /* ##### HEADER ##### */
 
 header{
-    width: 100%;
+    width: calc(100% - 230px );
     height: 90px;
     background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: end;
     align-items: center;
-    padding-right: 0.7rem;
-
-    /* position: fixed; */
+    padding-right: 1.3rem;
+    position: fixed;
  }
 
 header > button{
@@ -197,11 +211,18 @@ header > button{
     border-radius: 1.8rem;
 }
 
+@media screen and (max-width: 552px) {
+    
+    header{
+        width: calc(100% - 50px);
+    }
+}
+
 /* ##### NAV ##### */
 
 nav{
     width: 100%;
-    /* padding-top: 90px; */
+    padding-top: 90px;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -249,7 +270,7 @@ nav{
 main{
     width: 100%;
     /* padding-top: 90px; */
-    height: 100%;
+    /* height: 100%; */
     }
 
 .flexWrap{
@@ -348,6 +369,12 @@ footer{
     width: 100%;
     height: 90px;
     background-color: grey;
+    position: fixed;
+    bottom: 0;
 }
 
-
+.footeleft{
+    width: 30%;
+    height: 100%;
+    background-color: ;
+}

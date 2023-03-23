@@ -381,8 +381,7 @@ footer{
 }
 
 .footerLeft{
-    width: 30%;
-    max-width: 170px;
+    width: 25%;
     height:100%;
     display: flex;
     align-items: center;
@@ -398,7 +397,7 @@ footer{
 }
 
 .footerRight{
-    width: 30%;
+    width: 25%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -526,6 +525,7 @@ footer{
     background-color: grey;
     border-radius: 1rem;
     margin-top: 0.4rem;
+    margin-left: 0.8rem;
 }
 
 .audioWhite{
@@ -535,6 +535,37 @@ footer{
     border-radius: 1rem;
     position: relative;
     bottom: 0.4rem;
+    margin-left: 0.8rem;
 }
 
+@media screen and (max-width: 552px) {
+    
+    .footerLeft{
+        width: 30%;
+    }
+    
+    .footerRight{
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .footerLeft{
+        max-width: 300px;
+    }
+    
+    .footerCenter{
+        max-width: 480px;
+    }
+    
+    .footerRight{
+        max-width: 300px;
+    }
+
+    .conteinerFood{
+        justify-content: space-between;
+    }
+
+}
 

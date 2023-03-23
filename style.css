@@ -359,9 +359,9 @@ main{
     padding: 0.3rem;
     font-size: 1rem;
 }
-/* QUI SISTEMARE HOVER */
+/* QUI SISTEMARE fontsize hover */
 .hoverPlay > .fa-circle-play{
-    font-size: 10rem;
+    font-size: 7vw;
     color: white;
     display: none;
     position: absolute;
@@ -370,11 +370,11 @@ main{
     transform: translate(-50% , -50%);
 }
 
-.cardHover:hover{
+.cardHover:hover >img{
     filter: opacity(30%)
 }
 
-.hoverPlay .cardHover:hover {
+.cardHover:hover .fa-circle-play{
     display: block;
 }
 

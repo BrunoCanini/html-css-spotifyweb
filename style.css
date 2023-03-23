@@ -31,7 +31,6 @@
     width: 100%;
     height: 90px;
     padding: 1.2rem 0;
-    /* border: 1px solid white; */
 }
 
 .logo > img{
@@ -43,7 +42,6 @@
 
 .navi{
     width: 100%;
-    /* border: 1px solid white; */
      padding: 20px 0;
      line-height: 2.2rem;
 }
@@ -51,7 +49,8 @@
 .navi > span{
     font-size: 1.2rem;
     color: rgb(168, 164, 164);
-     padding-left: 0.5rem;
+    padding-left: 0.5rem;
+    vertical-align: top;
  }
 
 .navi > .fa-solid{
@@ -59,12 +58,15 @@
      color: rgb(168, 164, 164);
  }
 
-    /* PLAYLIST */
+ .navi > img{
+    width: 1.8rem;
+ }
+
+/* PLAYLIST */
 
 .playlist{
     width: 100%;
     height: 100%;
-    /* border: 1px solid white; */
     line-height: 2.2rem;
  }
 
@@ -86,12 +88,19 @@
      /* centrare */
  }
     
-    /* INSTALL */
+/* INSTALL */
 
 .install{
     width: 100%;
-     /* border: 1px solid white; */
     padding: 0.5rem 1.2rem;
+}
+
+.install > img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: grey;
 }
 
 .install > button{
@@ -109,22 +118,17 @@
 
 .install > span{
     color: rgb(168, 164, 164);
-     font-size: 1rem;
- }
-
- .fa-circle-user{
-    font-size: 2rem;
-    margin-right: 0.5rem;
-     color: white;
+    font-size: 1rem;
  }
 
 .install > b{
     font-size: 1.1rem;
-     color: white;
+    color: white;
+    padding-left: 0.5rem;
 }
 
  hr{
-     margin: 1rem 0;
+    margin: 1rem 0;
     border-color:rgb(168, 164, 164);
 }
 
@@ -134,6 +138,7 @@
     width: calc(100% - 230px);
     min-height: 1000px;
     background-color: #141922;
+    overflow-y: auto;
 }
 
 @media screen and (max-width: 552px) {
@@ -170,36 +175,38 @@
     }
 
     .install > button{
-        margin: 2rem 0.5rem;
+        margin: 2rem 0.4rem;
     }
 }
 
 /* ##### HEADER ##### */
 
- header{
+header{
     width: 100%;
-     height: 90px;
+    height: 90px;
     background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: end;
     align-items: center;
     padding-right: 0.7rem;
+
+    /* position: fixed; */
  }
 
 header > button{
-width: 219px;
-padding: 0.8rem;
- background-color: transparent;
- border: 1px solid white;
-color: white;
- border-radius: 1.8rem;
+    width: 219px;
+    padding: 0.8rem;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 1.8rem;
 }
 
 /* ##### NAV ##### */
 
 nav{
     width: 100%;
-    padding: 0.5 0;
+    /* padding-top: 90px; */
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -247,9 +254,7 @@ nav{
 main{
     width: 100%;
     /* padding-top: 90px; */
-    height: calc(100% - 90px);
-    border: 1px solid white;
-    overflow-y: auto;
+    height: 100%;
     }
 
 .flexWrap{
@@ -266,6 +271,15 @@ main{
     font-size: 1.5rem;
     padding-bottom: 1rem;
     padding-left: 0.5rem;
+    padding-top: 1rem;
+}
+
+.conteiner > p{
+    margin-top: -0.5rem;
+    padding-left: 0.5rem;
+    padding-bottom: 1rem;
+    font-size: 0.9rem;
+    color: rgb(168, 164, 164);
 }
 
 .card{
@@ -281,7 +295,7 @@ main{
     width: 100%;
 }
 
-.infoFilm{
+.infoFilm , .infoMusic{
     text-align: center;
 }
 
@@ -295,6 +309,43 @@ main{
     color: rgb(168, 164, 164);
     font-size: 0.8rem;
 }
+
+.picMusic , .picMusic_circle{
+    width: 100%;
+}
+
+.picMusic > img{
+    width: 100%;
+}
+
+.picMusic_circle > img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.infoMusic > h3{
+    color: white;
+    padding: 0.3rem;
+    font-size: 1rem;
+}
+
+
+@media screen and (min-width: 878px) {
+    
+    .card{
+        width: calc(100% / 4 - 0.5rem);
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    
+    .card{
+        width: calc(100% / 6 - 0.5rem);
+        padding: 0.5rem;
+    }
+}
+
 
 /* ##### FOOTER ##### */
 

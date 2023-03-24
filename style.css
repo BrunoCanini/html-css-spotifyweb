@@ -6,8 +6,6 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: black; 
-    /* verificare */
 }
 
 
@@ -93,13 +91,8 @@ body{
 /* INSTALL */
 
 .install{
-    width: calc(100% -  (100% - 210px));
+    width: 100%;
     padding: 0.5rem 1.2rem;
-    background-color: black;
-
-    position: fixed;
-    bottom: 91px;
-    z-index: 60;
 }
 
 .install  img{
@@ -157,7 +150,6 @@ span:hover{
 
 .conteinerRight{
     width: calc(100% - 230px);
-    min-height: 1000px;
     background-color: #141922;
     overflow-y: auto;
 }

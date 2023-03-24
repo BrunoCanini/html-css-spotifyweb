@@ -577,6 +577,24 @@ footer{
     margin-left: 0.8rem;
 }
 
+.lineTime:hover > .lineWhite{
+    background-color: green;
+}
+
+.audio:hover > .audioWhite{
+    background-color: green;
+}
+
+/* .ball{
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: white;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    position: absolute;
+    right: 0;
+}  */
+
 .boxPlayBig:hover{
     scale: 1.2;
 }

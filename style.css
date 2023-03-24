@@ -162,7 +162,7 @@ span:hover{
         justify-content: center;
     }
 
-    .conteinerLeft span , h3 , p , hr , a {
+    .conteinerLeft span , .conteinerLeft h3 , .conteinerLeft p , .conteinerLeft hr , .conteinerLeft a {
         display: none;
     }
 

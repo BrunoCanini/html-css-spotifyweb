@@ -581,19 +581,43 @@ footer{
     background-color: green;
 }
 
+.lineTime:hover  .ball{
+    display: block;
+}
+
 .audio:hover > .audioWhite{
     background-color: green;
 }
 
-/* .ball{
+.ball{
     width: 1.2rem;
     height: 1.2rem;
     background-color: white;
     border-radius: 50%;
     margin-bottom: 1rem;
-    position: absolute;
-    right: 0;
-}  */
+    position: relative;
+    bottom: 0.4rem;
+    left: 3.2rem;
+    display: none;
+}
+
+.ball2{
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: white;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    position: relative;
+    bottom: 0.4rem;
+    left: 1.8rem;
+    display: none;
+}
+
+.audio:hover  .ball2{
+    display: block;
+}
+
+
 
 .boxPlayBig:hover{
     scale: 1.2;

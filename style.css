@@ -666,7 +666,7 @@ footer{
 }
 
 
-@media screen and (max-width: 1000px) {
+/* @media screen and (max-width: 1000px) {
     
     .audioWhite{
         width: 23%;
@@ -695,7 +695,7 @@ footer{
     }
 }
 
-@media screen and (max-width:649px) {
+@media screen and (max-width:639px) {
     
     .audioWhite{
         width: 80%;
@@ -704,5 +704,6 @@ footer{
     .lineWhite{
         width: 55%;
     }
-}
+} */
 
+/* SISTEMARE PALLINO CON ABSOLUTE */

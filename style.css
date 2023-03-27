@@ -665,3 +665,44 @@ footer{
 
 }
 
+
+@media screen and (max-width: 1000px) {
+    
+    .audioWhite{
+        width: 23%;
+    }
+}
+
+@media screen and (max-width: 878px) {
+    
+    .audioWhite{
+        width: 30%;
+    }
+
+    .lineWhite{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    
+    .audioWhite{
+        width: 42%;
+    }
+
+    .lineWhite{
+        width: 42%;
+    }
+}
+
+@media screen and (max-width:649px) {
+    
+    .audioWhite{
+        width: 80%;
+    }
+
+    .lineWhite{
+        width: 55%;
+    }
+}
+
